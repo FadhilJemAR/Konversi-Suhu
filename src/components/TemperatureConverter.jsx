@@ -44,21 +44,6 @@ export function TemperatureConverter() {
      setInput2({unit:input2.unit,value:0});  
   },[input2.unit,input1.unit])
 
-  // // Konversi ketika input1 berubah
-  // useEffect(() => {
-  //   if (sourceInput === 1 && input1.value !== '') {
-  //     const converted = convertTemperature(input1.value, input1.unit, input2.unit);
-  //     setInput2({...input2, value: converted});
-  //   }
-  // }, [input1.value, input1.unit, input2.unit]);
-
-  // // Konversi ketika input2 berubah
-  // useEffect(() => {
-  //   if (sourceInput === 2 && input2.value !== '') {
-  //     const converted = convertTemperature(input2.value, input2.unit, input1.unit);
-  //     setInput1({...input1, value: converted});
-  //   }
-  // }, [input2.value, input2.unit, input1.unit]);
 
   const handleInput1Change = (element) => {
     const value = element.target.value;
