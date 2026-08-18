@@ -17,6 +17,8 @@ const convertTemperature = (value, fromUnit, toUnit) => {
     celsius = (num - 32) * 5/9;
   } else if (fromUnit === 'Kelvin') {
     celsius = num - 273.15;
+  }else if(fromUnit === "Reamur"){
+    celsius = 5/4 * num;
   }
   
   // Konversi dari Celsius ke unit tujuan
@@ -27,6 +29,8 @@ const convertTemperature = (value, fromUnit, toUnit) => {
     result = (celsius * 9/5) + 32;
   } else if (toUnit === 'Kelvin') {
     result = celsius + 273.15;
+  }else if(toUnit === "Reamur"){
+    result = 4/5 * celsius
   }
   
   return Math.round(result * 100) / 100;

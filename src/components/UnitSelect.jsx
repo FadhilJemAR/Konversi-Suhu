@@ -1,7 +1,8 @@
 const units = [
     "Celsius",
     "Kelvin",
-    "Fahrenheit"
+    "Fahrenheit",
+    "Reamur"
 ];
 
 export default function UnitSelect({setState, currentUnit}){
